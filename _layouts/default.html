@@ -23,7 +23,7 @@ https://github.com/pages-themes/dinky
   </head>
 
   <body>
-    <!------------ メニューバー ------------->
+    <!------------ メニューバー (開始)------------->
     <script src="{{ '/assets/js/jquery-3.2.1.min.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/jquery.prmenu.min.js' | relative_url }}"></script>
     <script>
@@ -33,55 +33,48 @@ https://github.com/pages-themes/dinky
     </script>
 
     <ul id="top-menu">
-      <li><a href="{{ '/' | relative_url }}">トップページ</a></li>
-      <li><a href="#">メニュー #1</a>
+      <li><a href="{{ '/' | relative_url }}">HOME</a></li>
+      <li><a href="#">MY NOTE</a>
         <ul>
-          <li><a href="#">アイテム #1-1</a></li>
-          <li><a href="#">アイテム #1-2</a>
-            <ul>
-              <li><a href="{{ '/sub1' | relative_url }}">サブアイテム #1-2-1</a></li>
-              <li><a href="{{ '/sub2' | relative_url }}">サブアイテム #1-2-2</a></li>
-              <li><a href="{{ '/sub3' | relative_url }}">サブアイテム #1-2-3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">アイテム #1-3</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="{{ '/Note/Markdown' | relative_url }}">Markdown</a></li>
         </ul>
       </li>
-      <li><a href="#">メニュー #2</a></li>
-      <li><a href="#">メニュー #3</a>
+      <li><a href="#">メニュー #2</a>
         <ul>
-          <li><a href="#">アイテム #3-1</a></li>
-          <li><a href="#">アイテム #3-2</a>
+          <li><a href="#">サブメニュー #2-1</a>
             <ul>
-              <li><a href="#">サブアイテム #3-2-1</a></li>
-              <li><a href="#">サブアイテム #3-2-2</a></li>
-              <li><a href="#">サブアイテム #3-2-3</a></li>
+              <li><a href="{{ '/sub1' | relative_url }}">サブアイテム #2-1-1</a></li>
+              <li><a href="{{ '/sub2' | relative_url }}">サブアイテム #2-1-2</a></li>
+              <li><a href="{{ '/sub3' | relative_url }}">サブアイテム #2-1-3</a></li>
             </ul>
           </li>
-          <li><a href="#">アイテム #3-3</a></li>
+          <li><a href="#">サブメニュー #2-2</a></li>
         </ul>
       </li>
+      <li><a href="#">メニュー #3</a></li>
       <li><a href="#">メニュー #4</a></li>
     </ul>
-    <!------------ メニューバー ------------->
+    <!------------ メニューバー (修了)------------->
 
 
     <div class="wrapper">
       <!-- ヘッド -->
-      <header>
-        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-      </header>
+      <!-- <header> -->
+      <!--   <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1> -->
+      <!--   <p class="header">{{ site.description | default: site.github.project_tagline }}</p> -->
+      <!-- </header> -->
 
       <!-- サブ・ディレクトリへのリンク -->
-      <sidemenu>
-        <ul>
-          <li class="sidemenu"><a href="{{ '/' | relative_url }}">トップページ</a></li>
-          <li class="sidemenu"><a href="{{ '/sub1' | relative_url }}">サブアイテム #1</a></li>
-          <li class="sidemenu"><a href="{{ '/sub2' | relative_url }}">サブアイテム #2</a></li>
-          <li class="sidemenu"><a href="{{ '/sub3' | relative_url }}">サブアイテム #3</a></li>
-        </ul>
-      </sidemenu>
+      <!-- <sidemenu> -->
+      <!--   <ul> -->
+      <!--     <li class="sidemenu"><a href="{{ '/' | relative_url }}">トップページ</a></li> -->
+      <!--     <li class="sidemenu"><a href="{{ '/sub1' | relative_url }}">サブアイテム #1</a></li> -->
+      <!--     <li class="sidemenu"><a href="{{ '/sub2' | relative_url }}">サブアイテム #2</a></li> -->
+      <!--     <li class="sidemenu"><a href="{{ '/sub3' | relative_url }}">サブアイテム #3</a></li> -->
+      <!--   </ul> -->
+      <!-- </sidemenu> -->
 
       <!--  Markdown の本体 -->
       <section>
